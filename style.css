@@ -1,0 +1,120 @@
+/* normal flow default => position : static */
+/* out of normal flow => position : absolute =>according to vp it takes place, other element takes its place , positon : relative =>can move top bottom left right , other element not take its place*/
+/* position :sticky => not disappear from vp */
+/* position fixed => not affected by other element, it takes own place from the start */
+/* absolute is other positons' child */
+
+/* .card {
+  height: 200px;
+}
+.container {
+  margin-top: 240px;
+}
+.one {
+  background-color: #be123c;
+}
+.two {
+  background-color: #10b981;
+  position: absolute;
+  /* width:auto in positon absolute */
+/* top: 30px;
+  left: 40px; */
+/* } */
+/* nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+  opacity: 0.7;
+  height: 100px;
+}
+.three {
+  background-color: #facc15;
+}
+h1 {
+  position: fixed;
+  bottom: 200px;
+  right: 24px;
+}
+footer {
+  position: sticky;
+  bottom: 23px;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #013243;
+  font-family: "Inter", sans-serif;
+  color: #32f5c8;
+  position: relative;
+}
+.container {
+  width: 1000px;
+  margin: 0px auto;
+}
+nav {
+  padding: 36px 0;
+}
+h1 {
+  font-size: 100px;
+}
+p {
+  color: #ccc;
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+button {
+  padding: 16px 24px;
+  background-color: #32f5c8;
+  font-weight: 600px;
+  border: none;
+  border-radius: 6px;
+}
+footer {
+  display: flex;
+  margin-top: 32px;
+  align-items: center;
+  gap: 18px;
+
+  color: #ccc;
+}
+footer img {
+  height: 32px;
+}
+
+.img-one {
+  position: absolute;
+  top: 35%;
+  right: 440px;
+  height: 75px;
+}
+.img-two {
+  position: absolute;
+  top: 10%;
+  right: 520px;
+  height: 100px;
+}
+.img-three {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  height: 100px;
+  z-index: -1;
+}
+.img-four {
+  position: absolute;
+  right: 450px;
+  bottom: 10px;
+  height: 150px;
+}
+.img-five {
+  position: absolute;
+  top: 15%;
+  right: 650px;
+  height: 80px;
+  z-index: -1;
+}
