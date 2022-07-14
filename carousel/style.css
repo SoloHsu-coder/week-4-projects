@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 820px;
+  margin: 32px auto;
+  position: relative;
+}
+/* img {
+  width: 100%;
+} */
+button {
+  padding: 20px;
+  font-size: 32px;
+  color: blue;
+  border: none;
+}
+.carousel-btn {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50);
+  /* element ရဲ့တစ်ဝက်ရွှေ့ */
+}
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: transparent;
+}
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: transparent;
+}
+.carousel-item {
+  display: none;
+}
+.container .visible {
+  display: block;
+}
+.carousel-item img {
+  width: 100%;
+}

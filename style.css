@@ -3,7 +3,7 @@
 /* position :sticky => not disappear from vp */
 /* position fixed => not affected by other element, it takes own place from the start */
 /* absolute is other positons' child */
-
+/* footer > svg => footer direct child svg */
 /* .card {
   height: 200px;
 }
@@ -59,6 +59,7 @@ body {
 nav {
   padding: 36px 0;
 }
+
 h1 {
   font-size: 100px;
 }
@@ -74,47 +75,74 @@ button {
   border: none;
   border-radius: 6px;
 }
+e button:hover {
+  background-color: whitesmoke;
+}
+button:active {
+  background-color: bisque;
+}
 footer {
   display: flex;
   margin-top: 32px;
   align-items: center;
   gap: 18px;
-
   color: #ccc;
 }
 footer img {
   height: 32px;
 }
-
-.img-one {
+.all-img img {
   position: absolute;
+}
+.img-one {
+  /* position: absolute; */
   top: 35%;
   right: 440px;
   height: 75px;
 }
 .img-two {
-  position: absolute;
+  /* position: absolute; */
   top: 10%;
   right: 520px;
   height: 100px;
 }
 .img-three {
-  position: absolute;
+  /* position: absolute; */
   top: 100px;
   left: 150px;
   height: 100px;
   z-index: -1;
 }
 .img-four {
-  position: absolute;
+  /* position: absolute; */
   right: 450px;
   bottom: 10px;
   height: 150px;
 }
 .img-five {
-  position: absolute;
+  /* position: absolute; */
   top: 15%;
   right: 650px;
   height: 80px;
   z-index: -1;
+}
+.new {
+  background-color: #f4f4f4;
+  height: 72px;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.new a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.new a:hover {
+  color: green;
+}
+.new a:visited {
+  color: #2d2d2d;
+}
+.new-two {
+  background-color: blue;
+  height: 100px;
 }
